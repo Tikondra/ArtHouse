@@ -1,0 +1,18 @@
+.header {
+  background-color: #FFF0E9;
+}
+
+.header__nav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  border: none;
+  background-color: #FFD1BF;
+  border-radius: 5px;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0px 0px 5px 0px #e69898;
+  }
+}
