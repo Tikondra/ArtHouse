@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  padding: 10px;
   background-color: #FFF0E9;
 }
 
@@ -15,4 +17,22 @@
   &:focus {
     box-shadow: 0px 0px 5px 0px #e69898;
   }
+}
+
+.header__phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #391111;
+  text-decoration: none;
+}
+
+.header__callback {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #C1B1AA;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
 }
