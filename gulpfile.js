@@ -94,6 +94,7 @@ gulp.task('copy', function () {
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
     'source/js/**',
+    'source/css/**',
     'source/*.ico'
   ], {
     base: 'source'
@@ -106,7 +107,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/**/*.js")
+  return gulp.src("source/js/script.js")
     .pipe(uglify())
     .pipe(rename(function (path) {
       path.basename += ".min"

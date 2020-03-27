@@ -1,0 +1,26 @@
+.advantage {
+  @include container;
+  padding: 10px;
+}
+
+.advantage__list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__item {
+  @include center-flex;
+  flex-wrap: wrap;
+  width: 270px;
+  flex-grow: 1;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #FBEDE6;
+  color: #95575A;
+}
+
+.advantage__text {
+  width: 100%;
+}

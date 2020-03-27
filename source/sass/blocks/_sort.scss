@@ -1,6 +1,6 @@
 .sort {
   @include container;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .sort__list {
@@ -31,5 +31,11 @@
   &--active {
     color: #fff;
     background-color: #391111;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sort {
+    padding: 15px;
   }
 }
