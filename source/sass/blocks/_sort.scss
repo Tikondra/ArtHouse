@@ -1,0 +1,35 @@
+.sort {
+  @include container;
+  padding: 15px;
+}
+
+.sort__list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort__item {
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.sort__link {
+  display: block;
+
+  padding: 15px 13px;
+  color: #70635D;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  background-color: #FFEFE9;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+
+  &:hover,
+  &--active {
+    color: #fff;
+    background-color: #391111;
+  }
+}

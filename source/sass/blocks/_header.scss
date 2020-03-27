@@ -36,3 +36,31 @@
   background-color: transparent;
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {
+  .header__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .header__call {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__content,
+  .header__menu {
+    @include container;
+  }
+
+  .header__nav-btn {
+    display: none;
+  }
+
+  .header__call {
+    width: 350px;
+  }
+}

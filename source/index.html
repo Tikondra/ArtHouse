@@ -12,7 +12,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <div>
+      <div class="header__menu">
         <nav class="header__nav navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -58,7 +58,7 @@
           </svg>
         </button>
       </div>
-      <div>
+      <div class="header__content">
         <div class="header__logo">
           <img src="img/logo.svg" alt="ArtHouse">
         </div>
@@ -70,16 +70,51 @@
             </svg>
           </button>
         </form>
-        <a class="header__phone" href="tel:74995571272">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12" width="11px" height="12px" fill="none">
-            <use xlink:href="#icon-phone"></use>
-          </svg>
-          +7(499) 557-12-72
-        </a>
-        <button class="header__callback" type="button">Перезвоните мне</button>
+        <div class="header__call">
+          <a class="header__phone" href="tel:74995571272">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12" width="11px" height="12px" fill="none">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            +7(499) 557-12-72
+          </a>
+          <button class="header__callback" type="button">Перезвоните мне</button>
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="sort">
+        <ul class="sort__list">
+          <li class="sort__item">
+            <a class="sort__link" href="">Люстры</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link sort__link--active" href="">Светильники</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="">Бра</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="">Настольные лампы</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="">Торшеры</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="">Уличные светильники</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="">Декор</a>
+          </li>
+
+        </ul>
+      </section>
+    </main>
     <footer></footer>
     <script src="js/script.min.js"></script>
   </body>

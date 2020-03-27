@@ -28,7 +28,9 @@
   display: block;
   padding: 5px 25px;
   color: #fff;
-  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 600;
   text-decoration: none;
   text-align: center;
 
@@ -44,6 +46,32 @@
 
     &--show {
       right: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    position: static;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #FFF0E9;
+    background-image: none;
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .navigation__link {
+    padding: 5px 42px 10px 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #867A74;
+
+    &:hover {
+      color: darken(#867A74, 30%);
     }
   }
 }
