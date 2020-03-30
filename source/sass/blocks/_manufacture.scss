@@ -24,6 +24,11 @@
 }
 
 @media (min-width: 1024px) {
+  .manufacture {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   .manufacture__item {
     margin: 15px;
   }
