@@ -1,0 +1,35 @@
+.breadscrums {
+  @include list;
+  display: flex;
+  padding: 20px;
+}
+
+.breadscrums__link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #867A74;
+
+  &[href] {
+    &:hover {
+      color: darken(#867A74, 30%);
+    }
+  }
+}
+
+.breadscrums__item {
+  display: flex;
+
+  &:not(:last-child):after {
+    content: '>';
+    margin: 0 15px;
+    color: #867A74;
+  }
+}
+
+@media (min-width: 1024px) {
+  .breadscrums {
+    padding: 0 20px 20px;
+  }
+}

@@ -1,0 +1,46 @@
+.store-content {
+  position: relative;
+}
+
+.store-content__cards {
+  max-width: 870px;
+}
+
+.store-content__title {
+  padding: 0 20px;
+  font-family: Times New Roman;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #562F2F;
+}
+
+.store-content__sort {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #70635D;
+}
+
+.store-content__btn-more {
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #562F2F;
+  background-color: #FBD2A4;
+  border: 1px solid #EED6CD;
+}
+
+@media (min-width: 1024px) {
+  .store-content {
+    max-width: 1210px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+  }
+}
