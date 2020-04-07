@@ -121,6 +121,11 @@
     width: 320px;
   }
 
+  .filter__form {
+    position: sticky;
+    top: 20px;
+  }
+
   .filter__open,
   .filter__btn-close {
     display: none;
