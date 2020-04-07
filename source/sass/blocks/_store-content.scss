@@ -8,6 +8,7 @@
 
 .store-content__title {
   padding: 0 20px;
+  margin: 0;
   font-family: Times New Roman;
   font-weight: 700;
   font-size: 30px;
@@ -36,11 +37,19 @@
   border: 1px solid #EED6CD;
 }
 
+.store-content__more-box {
+  padding: 15px;
+}
+
 @media (min-width: 1024px) {
   .store-content {
     max-width: 1210px;
     padding: 20px;
     margin: auto;
     display: flex;
+  }
+
+  .store-content__more-box {
+    padding: 15px 15px 0;
   }
 }

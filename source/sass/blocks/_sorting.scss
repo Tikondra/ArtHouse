@@ -31,6 +31,10 @@
     margin-top: auto;
     text-align: center;
   }
+
+  &:hover {
+    background-color: #FBD2A4;
+  }
 }
 
 @media (min-width: 1024px) {
