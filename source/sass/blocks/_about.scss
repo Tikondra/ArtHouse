@@ -48,9 +48,13 @@
     padding: 0;
     width: 48%;
     order: 0;
+
+    &--page {
+      width: 50%
+    }
   }
 
   .about__img {
-    width: 48%;
+    width: 45%;
   }
 }

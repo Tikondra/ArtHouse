@@ -1,11 +1,14 @@
 .cards {
   @include list;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 5px 20px 5px;
   padding: 15px;
   width: 205px;
@@ -16,16 +19,62 @@
 
   img {
     margin: auto;
+    max-height: 213px;
+    width: auto;
   }
+}
+
+.cards__img {
+  margin: auto;
+}
+
+.cards__material {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #9E968E;
+}
+
+.cards__prices {
+  display: flex;
+}
+
+.cards__price {
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #562F2F;
+
+  &--sale {
+    color: #9E968E;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+}
+
+.cards__sale-value {
+  display: none;
+}
+
+.cards__title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #562F2F;
 }
 
 @media (min-width: 1024px) {
   .cards {
-    padding: 5px 15px;
+    padding: 0 0 0 15px;
   }
 
   .cards__item {
-    width: 25%;
+    width: 33.3%;
     margin: 0;
     flex-grow: 0;
   }

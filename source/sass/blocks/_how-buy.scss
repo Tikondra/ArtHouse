@@ -1,0 +1,37 @@
+.how-buy {
+  @include container;
+}
+
+.how-buy__title {
+  margin-bottom: 40px;
+  font-family: Times New Roman;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #562F2F;
+}
+
+.how-buy__subtitle {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #562F2F;
+}
+
+.how-buy__text {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #562F2F;
+}
+
+.how-buy__section {
+  margin-bottom: 40px;
+  max-width: 650px;
+}

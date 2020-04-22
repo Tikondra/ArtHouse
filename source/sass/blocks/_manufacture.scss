@@ -10,6 +10,11 @@
   text-transform: uppercase;
   text-align: center;
   color: #562F2F;
+
+  &--page {
+    text-align: left;
+    padding: 0 20px;
+  }
 }
 
 .manufacture__list {
@@ -27,6 +32,11 @@
   .manufacture {
     max-width: 1200px;
     margin: auto;
+
+    &--page {
+      padding-bottom: 70px;
+      padding-top: 1px;
+    }
   }
 
   .manufacture__item {

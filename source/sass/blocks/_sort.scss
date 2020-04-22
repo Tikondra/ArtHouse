@@ -7,6 +7,13 @@
   @include list;
   display: flex;
   flex-wrap: wrap;
+
+  &--category {
+    .sort__link {
+      border: 2px solid #f7d3c6;
+      padding: 10px 5px;
+    }
+  }
 }
 
 .sort__item {

@@ -95,7 +95,9 @@ gulp.task('copy', function () {
     'source/img/**',
     'source/js/**',
     'source/css/**',
-    'source/*.ico'
+    'source/*.ico',
+    'source/*.js',
+    'source/data/**'
   ], {
     base: 'source'
   })

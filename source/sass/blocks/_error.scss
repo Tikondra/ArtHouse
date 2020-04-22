@@ -1,0 +1,48 @@
+.error {
+  @include container;
+}
+
+.error__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: #EAB87F;
+}
+
+.error__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #5B1717;
+}
+
+.error__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #7D5C5C;
+}
+
+.error__btn {
+  display: block;
+  margin: 20px 0;
+  max-width: 250px;
+  padding: 19px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #5B1717;
+  border-radius: 50px;
+}
+
+@media (min-width: 1024px) {
+  .error {
+    display: flex;
+    align-items: center;
+  }
+}
