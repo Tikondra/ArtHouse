@@ -86,6 +86,49 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/components/AbstractComponent.js":
+/*!*********************************************!*\
+  !*** ./src/components/AbstractComponent.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/components/utils.js");
+
+
+class AbstractComponent {
+  constructor() {
+    if (new.target === AbstractComponent) {
+      throw new Error(`Can't instantiate AbstractComponent, only concrete one.`);
+    }
+
+    this._element = null;
+  }
+
+  getTemplate() {
+    throw new Error(`Abstract method not implemented: getTemplate`);
+  }
+
+  getElement() {
+    if (!this._element) {
+      this._element = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["createElement"])(this.getTemplate());
+    }
+
+    return this._element;
+  }
+
+  removeElement() {
+    this._element = null;
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (AbstractComponent);
+
+
+/***/ }),
+
 /***/ "./src/components/button-more.js":
 /*!***************************************!*\
   !*** ./src/components/button-more.js ***!
@@ -137,12 +180,13 @@ class ButtonMore {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Card; });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/components/utils.js");
+/* harmony import */ var _AbstractComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AbstractComponent */ "./src/components/AbstractComponent.js");
+
 
 
 const createCard = (card) => {
-  const {title, price, sale, image} = card;
+  const {title, price, sale, image, id, material} = card;
 
   const getTitle = () => {
     return title.match(_utils__WEBPACK_IMPORTED_MODULE_0__["regexp"]).join(``);
@@ -150,40 +194,33 @@ const createCard = (card) => {
 
   return (
     `<li class="cards__item">
-      <img src=${image} width="213" height="213" alt="Название товара">
-      <h3 class="cards__title">${getTitle()}</h3>
-      <p class="cards__material">Материал: нерж.сталь, МДФ, пленка ПВХ.</p>
-      <div class="cards__prices">
-        <p class="cards__price">${sale} ₽</p>
-        <p class="cards__price cards__price--sale">${price} ₽</p>
-      </div>
-      <div class="cards__sale-value">-10%</div>
+        <a class="cards__link" href="card.html?${id}">
+            <img src=${image} width="213" height="213" alt="Название товара">
+        </a>
+        <h3 class="cards__title">${getTitle()}</h3>
+        <p class="cards__material">${material}</p>
+        <div class="cards__prices">
+            <p class="cards__price">${sale} ₽</p>
+            <p class="cards__price cards__price--sale">${price} ₽</p>
+        </div>
+        <div class="cards__sale-value">-10%</div>
     </li>`
   );
 };
 
-class Card {
+class Card extends _AbstractComponent__WEBPACK_IMPORTED_MODULE_1__["default"] {
   constructor(card) {
+    super();
+
     this._card = card;
-    this._element = null;
   }
 
   getTemplate() {
     return createCard(this._card);
   }
-
-  getElement() {
-    if (!this._element) {
-      this._element = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["createElement"])(this.getTemplate());
-    }
-
-    return this._element;
-  }
-
-  removeElement() {
-    this._element = null;
-  }
 }
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
 
 
 /***/ }),
@@ -340,7 +377,7 @@ const cardBox = document.querySelector(`.cards`);
 const buttonMoreBox = document.querySelector(`.store-content__more-box`);
 const loadMoreButton = document.querySelector(`.store-content__btn-more`);
 const categoryList = document.querySelector(`.sort__list--category`);
-const allCategoruBtn = document.querySelector(`.sort__link--category`);
+const allCategoryBtn = document.querySelector(`.sort__link--category`);
 let offers = [];
 let categories = [];
 let isSort = null;
@@ -378,6 +415,8 @@ const getOffers = (data) => {
       sale: card.wholesalePrice,
       image: getImage(card.picture),
       categoryId: card.categoryId,
+      id: card.id,
+      material: card.material
     };
     cardList.push(product);
     return cardList;
@@ -497,7 +536,7 @@ const loadCategory = (data) => {
 
 
 
-allCategoruBtn.addEventListener(`click`, (evt) => {
+allCategoryBtn.addEventListener(`click`, (evt) => {
   evt.preventDefault();
   const copyOffers = offers.slice();
   const categoryButtons = categoryList.querySelectorAll(`.sort__link`);

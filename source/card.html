@@ -5,7 +5,7 @@
     <title>ArtHouse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -120,7 +120,7 @@
           </li>
 
           <li class="sort__item">
-            <a class="sort__link sort__link--active">Декор</a>
+            <a class="sort__link" href="decor.html">Декор</a>
           </li>
 
           <li class="sort__item">
@@ -136,43 +136,45 @@
           </li>
         </ul>
       </nav>
-      <div class="store-content">
-        <button class="filter__open" type="button">Фильтр</button>
-        <section class="filter">
-          <form class="filter__form" action="" method="">
-            <h2 class="filter__main-title">Категории</h2>
-            <nav class="sort" style="padding: 0;margin-bottom: 15px;">
-              <ul class="sort__list sort__list--category">
-
-              </ul>
-            </nav>
-            <div class="sort__item">
-              <a class="sort__link sort__link--category" href="decor.html">Показать все</a>
-            </div>
-            <button class="filter__btn-close" type="button">Х</button>
-          </form>
-        </section>
-        <section class="store-content__cards">
-          <h1 class="store-content__title visually-hidden">Декор</h1>
-          <ul class="cards">
-            <!-- <li class="cards__item">
-              <a href="card.html?00002697">
-                <img src="http://garda-opt.ru/upload/1c_catalog/images_1c/00002697/white/00002697_1.jpg" width="213" height="213" alt="Название товара">
-              </a>
-              <h3 class="cards__title">${getTitle()}</h3>
-              <p class="cards__material">Материал: нерж.сталь, МДФ, пленка ПВХ.</p>
-              <div class="cards__prices">
-                <p class="cards__price">${sale} ₽</p>
-                <p class="cards__price cards__price--sale">${price} ₽</p>
-              </div>
-              <div class="cards__sale-value">-10%</div>
-            </li> -->
+      <!-- <section class="card-page">
+        <h1 class="card-page__title">
+          Диван Ralph трехместный раскладной серо-зеленый
+        </h1>
+        <div class="card-page__info-box">
+          <ul class="card-page__list owl-carousel">
+            <li>
+              <img src="img/new1.jpg">
+            </li>
+            <li>
+              <img src="img/new2.jpg">
+            </li>
+            <li>
+              <img src="img/new3.jpg">
+            </li>
           </ul>
-          <div class="store-content__more-box">
-            <button class="store-content__btn-more" type="button">Показать еще</button>
+          <div class="card-page__info">
+            <p class="card-page__info-text card-page__info-text--price">
+              <span>Цена:</span> 15 226 ₽
+            </p>
+            <p class="card-page__info-text">
+              <span>Артикул:</span>  RALPH-2K-СЕРО-ЗЕЛЕНЫЙ-CRU10
+            </p>
+            <p class="card-page__info-text">
+              <span>Категория:</span>  Велюровые диваны
+            </p>
+            <p class="card-page__info-text">
+              <span>Материалы:</span>  обивка - ткань, каркас и ножки - дерево, металл, наполнитель HR ППУ
+            </p>
+            <a class="card-page__buy-btn" href="">Купить</a>
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="card-page__description">
+          <h2>Описание:</h2>
+          <p>
+            Механизм трансформации «Миллениум», обладает усиленными прочностными характеристиками и удобным способом раскладывания раскладывания. При раскладывании дивана не нужно снимать подушки сидения и спинки. Габариты сиденья: длина 186см, высота 50см, глубина 60см. Спальное место : 158*196см, толщина матраса: 14см Декоративные подушки в комплект дивана не входят, их следует заказывать допонительно.
+          </p>
+        </div>
+      </section> -->
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
@@ -221,9 +223,8 @@
       </div>
     </footer>
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/script.min.js"></script>
-    <script src="bundle.js"></script>
+    <script src="card.js"></script>
+
   </body>
 </html>
