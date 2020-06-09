@@ -4,6 +4,7 @@
 
 .store-content__cards {
   max-width: 870px;
+  flex-grow: 1;
 }
 
 .store-content__title {
@@ -19,11 +20,29 @@
 }
 
 .store-content__sort {
-  padding: 20px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #70635D;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #EED6CD;
+
+  h2 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #70635D;
+  }
+
+  .store-content__sort-select {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #562F2F;
+    border: 1px solid #EED6CD;
+  }
 }
 
 .store-content__btn-more {
@@ -51,5 +70,9 @@
 
   .store-content__more-box {
     padding: 15px 0 0 15px;
+  }
+
+  .store-content__sort {
+    margin: 0 0 15px 15px;
   }
 }

@@ -8,6 +8,7 @@
   background-color: #FFEFE9;
   border: 1px solid #F7D3C6;
   transition: 0.4s ease;
+  user-select: none;
 
   &--open {
     left: 0;
@@ -32,10 +33,10 @@
 	color: #562F2F;
 	font-size: 14px;
   line-height: 20px;
-	font-weight: 600;
+	font-weight: 700;
 }
 
-.filter__checkboxs {
+.filter__checkboxes {
   @include list;
   display: none;
 }
@@ -47,7 +48,7 @@
 	background-color: #FFEFE9;
 
   &--open {
-    .filter__checkboxs {
+    .filter__checkboxes {
       display: block;
     }
 
@@ -117,6 +118,7 @@
 
 @media (min-width: 1024px) {
   .filter {
+    padding: 0;
     position: static;
     width: 320px;
   }

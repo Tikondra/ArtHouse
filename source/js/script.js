@@ -46,14 +46,14 @@ if (document.querySelector('.filter')) {
   var filterOpen = document.querySelector('.filter__open');
   var filterClose = filter.querySelector('.filter__btn-close');
 
-  filterItem.forEach(function (item) {
-    var filterTitle = item.querySelector('.filter__title');
-    var checkboxBox = item.querySelector('.filter__checkboxs');
+  // filterItem.forEach(function (item) {
+  //   var filterTitle = item.querySelector('.filter__title');
+  //   var checkboxBox = item.querySelector('.filter__checkboxs');
 
-    filterTitle.addEventListener('click', function () {
-      item.classList.toggle('filter__item--open');
-    });
-  });
+  //   filterTitle.addEventListener('click', function () {
+  //     item.classList.toggle('filter__item--open');
+  //   });
+  // });
 
   filterOpen.addEventListener('click', function () {
     filter.classList.add('filter--open');

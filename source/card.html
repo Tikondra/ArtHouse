@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="preloader">
+      <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+      </svg>
+    </div>
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -17,31 +25,31 @@
         <nav class="header__nav navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="about.html">О компании</a>
+              <a class="navigation__link" href="about">О компании</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="howbuy.html">Как купить</a>
+              <a class="navigation__link" href="howbuy">Как купить</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="brends.html">Бренды</a>
+              <a class="navigation__link" href="brends">Бренды</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="partners.html">Партнеры</a>
+              <a class="navigation__link" href="partners">Партнеры</a>
             </li class="navigation__item">
 
             <li class="navigation__item">
-              <a class="navigation__link" href="service.html">Услуги</a>
+              <a class="navigation__link" href="service">Услуги</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="news.html">Новости</a>
+              <a class="navigation__link" href="news">Новости</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="contacts.html">Контакты</a>
+              <a class="navigation__link" href="contacts">Контакты</a>
             </li>
           </ul>
           <p class="navigation__address">
@@ -92,7 +100,7 @@
       </div>
       <div class="header__content">
         <div class="header__logo">
-          <a href="index.html"><img src="img/logo.svg" alt="ArtHouse"></a>
+          <a href="http://arthouse-decor.ru/"><img src="img/logo.svg" alt="ArtHouse"></a>
         </div>
         <form class="search">
           <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
@@ -112,78 +120,44 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="product">
       <nav class="sort">
         <ul class="sort__list">
           <li class="sort__item">
-            <a class="sort__link" href="svet.html">Свет</a>
+            <a class="sort__link" href="svet">Свет</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="decor.html">Декор</a>
+            <a class="sort__link" href="decor">Гарда-декор</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="furniture.html">Мебель</a>
+            <a class="sort__link" href="softfurniture">Мягкая мебель</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="stocks.html">Акции</a>
+            <a class="sort__link" href="furniture">Столы</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="new.html">Новинки</a>
+            <a class="sort__link" href="chairs">Стулья</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="new">Акции</a>
           </li>
         </ul>
       </nav>
-      <!-- <section class="card-page">
-        <h1 class="card-page__title">
-          Диван Ralph трехместный раскладной серо-зеленый
-        </h1>
-        <div class="card-page__info-box">
-          <ul class="card-page__list owl-carousel">
-            <li>
-              <img src="img/new1.jpg">
-            </li>
-            <li>
-              <img src="img/new2.jpg">
-            </li>
-            <li>
-              <img src="img/new3.jpg">
-            </li>
-          </ul>
-          <div class="card-page__info">
-            <p class="card-page__info-text card-page__info-text--price">
-              <span>Цена:</span> 15 226 ₽
-            </p>
-            <p class="card-page__info-text">
-              <span>Артикул:</span>  RALPH-2K-СЕРО-ЗЕЛЕНЫЙ-CRU10
-            </p>
-            <p class="card-page__info-text">
-              <span>Категория:</span>  Велюровые диваны
-            </p>
-            <p class="card-page__info-text">
-              <span>Материалы:</span>  обивка - ткань, каркас и ножки - дерево, металл, наполнитель HR ППУ
-            </p>
-            <a class="card-page__buy-btn" href="">Купить</a>
-          </div>
-        </div>
-        <div class="card-page__description">
-          <h2>Описание:</h2>
-          <p>
-            Механизм трансформации «Миллениум», обладает усиленными прочностными характеристиками и удобным способом раскладывания раскладывания. При раскладывании дивана не нужно снимать подушки сидения и спинки. Габариты сиденья: длина 186см, высота 50см, глубина 60см. Спальное место : 158*196см, толщина матраса: 14см Декоративные подушки в комплект дивана не входят, их следует заказывать допонительно.
-          </p>
-        </div>
-      </section> -->
+
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__box">
           <h3 class="footer__title">Продукция</h3>
           <ul class="footer__list">
-            <li><a class="footer__link" href="">Бренды</a></li>
-            <li><a class="footer__link" href="">Люстры</a></li>
-            <li><a class="footer__link" href="">Светильники</a></li>
+            <li><a class="footer__link" href="svet">Свет</a></li>
+            <li><a class="footer__link" href="decor">Гарда-декор</a></li>
+            <li><a class="footer__link" href="furniture">Столы и стулья</a></li>
             <li><a class="footer__link" href="">Бра</a></li>
             <li><a class="footer__link" href="">Настольные лампы</a></li>
             <li><a class="footer__link" href="">Торшеры</a></li>
@@ -224,7 +198,8 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="card.js"></script>
-
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>

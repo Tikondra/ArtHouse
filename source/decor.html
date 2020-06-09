@@ -2,13 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>ArtHouse</title>
+    <title>Официальный партнер компании Гарда-Декор в Астрахани.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="preloader">
+      <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+      </svg>
+    </div>
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -17,31 +24,31 @@
         <nav class="header__nav navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="about.html">О компании</a>
+              <a class="navigation__link" href="about">О компании</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="howbuy.html">Как купить</a>
+              <a class="navigation__link" href="howbuy">Как купить</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="brends.html">Бренды</a>
+              <a class="navigation__link" href="brends">Бренды</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="partners.html">Партнеры</a>
+              <a class="navigation__link" href="partners">Партнеры</a>
             </li class="navigation__item">
 
             <li class="navigation__item">
-              <a class="navigation__link" href="service.html">Услуги</a>
+              <a class="navigation__link" href="service">Услуги</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="news.html">Новости</a>
+              <a class="navigation__link" href="news">Новости</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="contacts.html">Контакты</a>
+              <a class="navigation__link" href="contacts">Контакты</a>
             </li>
           </ul>
           <p class="navigation__address">
@@ -92,7 +99,7 @@
       </div>
       <div class="header__content">
         <div class="header__logo">
-          <a href="index.html"><img src="img/logo.svg" alt="ArtHouse"></a>
+          <a href="http://arthouse-decor.ru/"><img src="img/logo.svg" alt="ArtHouse"></a>
         </div>
         <form class="search">
           <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
@@ -116,57 +123,56 @@
       <nav class="sort">
         <ul class="sort__list">
           <li class="sort__item">
-            <a class="sort__link" href="svet.html">Свет</a>
+            <a class="sort__link" href="svet">Свет</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link sort__link--active">Декор</a>
+            <a class="sort__link" href="decor">Гарда-декор</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="furniture.html">Мебель</a>
+            <a class="sort__link" href="softfurniture">Мягкая мебель</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="stocks.html">Акции</a>
+            <a class="sort__link" href="furniture">Столы</a>
           </li>
 
           <li class="sort__item">
-            <a class="sort__link" href="new.html">Новинки</a>
+            <a class="sort__link" href="chairs">Стулья</a>
+          </li>
+
+          <li class="sort__item">
+            <a class="sort__link" href="new">Акции</a>
           </li>
         </ul>
       </nav>
-      <div class="store-content">
+      <div class="store-content decor-js">
         <button class="filter__open" type="button">Фильтр</button>
         <section class="filter">
           <form class="filter__form" action="" method="">
             <h2 class="filter__main-title">Категории</h2>
             <nav class="sort" style="padding: 0;margin-bottom: 15px;">
-              <ul class="sort__list sort__list--category">
-
+              <ul class="sort__list sort__list--category sort__list--category-decor">
+                <!-- категории -->
               </ul>
             </nav>
-            <div class="sort__item">
-              <a class="sort__link sort__link--category" href="decor.html">Показать все</a>
-            </div>
             <button class="filter__btn-close" type="button">Х</button>
           </form>
         </section>
         <section class="store-content__cards">
           <h1 class="store-content__title visually-hidden">Декор</h1>
+          <!-- сортировка -->
+          <div class="store-content__sort">
+            <h2>Сортировка:</h2>
+            <select class="store-content__sort-select">
+              <option value="default">По популярности</option>
+              <option value="price-up">По возрастанию цены</option>
+              <option value="price-down">По убыванию цены</option>
+            </select>
+          </div>
           <ul class="cards">
-            <!-- <li class="cards__item">
-              <a href="card.html?00002697">
-                <img src="http://garda-opt.ru/upload/1c_catalog/images_1c/00002697/white/00002697_1.jpg" width="213" height="213" alt="Название товара">
-              </a>
-              <h3 class="cards__title">${getTitle()}</h3>
-              <p class="cards__material">Материал: нерж.сталь, МДФ, пленка ПВХ.</p>
-              <div class="cards__prices">
-                <p class="cards__price">${sale} ₽</p>
-                <p class="cards__price cards__price--sale">${price} ₽</p>
-              </div>
-              <div class="cards__sale-value">-10%</div>
-            </li> -->
+            <!-- карточки -->
           </ul>
           <div class="store-content__more-box">
             <button class="store-content__btn-more" type="button">Показать еще</button>
@@ -179,9 +185,9 @@
         <div class="footer__box">
           <h3 class="footer__title">Продукция</h3>
           <ul class="footer__list">
-            <li><a class="footer__link" href="">Бренды</a></li>
-            <li><a class="footer__link" href="">Люстры</a></li>
-            <li><a class="footer__link" href="">Светильники</a></li>
+            <li><a class="footer__link" href="svet">Свет</a></li>
+            <li><a class="footer__link" href="decor">Гарда-декор</a></li>
+            <li><a class="footer__link" href="furniture">Столы и стулья</a></li>
             <li><a class="footer__link" href="">Бра</a></li>
             <li><a class="footer__link" href="">Настольные лампы</a></li>
             <li><a class="footer__link" href="">Торшеры</a></li>
@@ -224,6 +230,6 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.min.js"></script>
-    <script src="bundle.js"></script>
+    <script src="bundle.js" crossorigin = "anonymous"></script>
   </body>
 </html>

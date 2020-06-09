@@ -12,6 +12,10 @@
   color: #562F2F;
 }
 
+.card-page__images {
+  width: 100%;
+}
+
 .card-page__list {
   @include list;
 
@@ -20,9 +24,20 @@
     max-height: 500px;
     width: auto !important;
   }
+
+  li {
+    border: 2px solid #ffefe9;
+  }
+}
+
+.card-page__box {
+  max-height: 300px;
+  overflow: auto;
+  margin-bottom: 25px;
 }
 
 .card-page__info-text {
+  margin: 5px 0;
   font-size: 16px;
   line-height: 22px;
   color: #562F2F;
@@ -37,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 27px 10px;
+    padding: 25px 10px;
     background-color: #FFEFE9;
     font-weight: 700;
     font-size: 24px;
@@ -52,8 +67,10 @@
 }
 
 .card-page__buy-btn {
-  display: block;
+  display: none;
   max-width: 209px;
+  margin: auto;
+  margin-top: 20px;
   padding: 19px 15px;
   font-weight: 600;
   font-size: 16px;
@@ -65,17 +82,40 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .card-page__info-box {
-    display: flex;
+.card-page__description {
+  color: #6B5151;
+  font-size: 16px;
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
   }
 
-  .card-page__list {
-    width: 50%;
+  h1 {
+    display: none;
   }
 
-  .card-page__description {
-    max-width: 600px;
+  p, ul {
+    font-size: 14px;
+  }
+}
+
+.card-page__gallery {
+  @include list;
+  padding: 15px 30px;
+  display: none;
+
+  li {
+    width: 140px;
+    border: 1px solid #EED6CD;
+    margin-right: 15px;
+  }
+
+  img {
+    max-height: 200px;
+    margin: auto;
   }
 }
 
@@ -84,18 +124,70 @@
     display: flex;
   }
 
-  .card-page__list {
+  .card-page__images {
     width: 70%;
-    padding: 30px;
+  }
+
+  .card-page__list {
+    padding: 0 30px;
 
     img {
       margin: auto;
       max-height: 500px;
       width: auto !important;
+      min-height: 300px;
+    }
+
+    .owl-nav {
+      left: 30px;
+    }
+
+    li {
+      display: flex;
+      min-height: 500px;
     }
   }
 
-  .card-page__info {
+  .card-page__description {
+    padding-left: 30px;
+    max-width: 700px;
+    margin-bottom: 100px;
 
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .card-page__title {
+    padding-left: 30px;
+  }
+
+  .card-page__info {
+    flex-grow: 1;
+  }
+
+  .card-page__gallery {
+    display: flex;
+  }
+
+  .card-page__info-text {
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #EED6CD;
+
+    &--price {
+      padding: 25px 10px;
+      border: none;
+    }
+  }
+
+  .card-page__buy-btn {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-page__description-box {
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -1,5 +1,7 @@
 .error {
-  @include container;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
 }
 
 .error__title {
@@ -40,9 +42,14 @@
   border-radius: 50px;
 }
 
+.error__info {
+  max-width: 480px;
+}
+
 @media (min-width: 1024px) {
   .error {
     display: flex;
     align-items: center;
+    padding: 20px 20px 100px;
   }
 }
